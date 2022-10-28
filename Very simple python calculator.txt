@@ -1,0 +1,41 @@
+
+def Add():								### Defines the addition function
+  add = num1 + num2							### Creates a variable known as add that stores the addition of number 1 and 2
+  print(num1, "+", num2, "=", add)					### Adds 2 numbers together
+
+def Sub():
+  sub = num1 - num2
+  print(num1, "-", num2, "=", sub)
+
+def Mul():
+  mul = num1 * num2
+  print(num1, "x", num2, "=", mul)
+
+def Div():
+  div = num1 / num2
+  print(num1, "/", num2, "=", div)
+
+print("Welcome to the python calculator!")
+print("+-------------------------------+")
+print("Please select a number:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+
+choice = int(input("What is your choice?:\n"))			### Asks for an input from the user and stores it in a variable
+print("+===============+")
+num1 = int(input("Please input your first number:\n"))		### \n Creates a new line, this makes the output look cleaner
+num2 = int(input("Please input your second number:\n"))
+
+
+if choice == 1:							### An if statement. If choice is equal to 1 then it will 
+  Add()
+elif choice == 2:						### An else if statement, used when the first if statement is not met
+  Sub()								### A useful but inefficient way to write code
+elif choice == 3:						### This code could be improved with a loop 
+  Mul()
+elif choice == 4:
+  Div()								###Div() calls upon the pre defined function we have at the top of the code.
+  
